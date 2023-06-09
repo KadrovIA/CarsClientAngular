@@ -1,0 +1,27 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Brand Name</mat-label>
+    <input matInput formControlName="brandName">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Brand Color</mat-label>
+    <input matInput formControlName="brandColor">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Brand Cost</mat-label>
+    <input matInput formControlName="brandCost">
+  </mat-form-field>
+  <p style="margin-left: 15px">Manufacturer</p>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Manufacturer Name</mat-label>
+    <input matInput formControlName="manufacturerName">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Manufacturer Country</mat-label>
+    <input matInput formControlName="manufacturerCountry">
+  </mat-form-field>
+
+  <button class="button" mat-flat-button style="margin: 4px" color="primary"
+          type="submit">Добавить</button>
+  <button class="button" mat-flat-button color="primary" (click)="onNoClick()" type="button">Отмена</button>
+</form>

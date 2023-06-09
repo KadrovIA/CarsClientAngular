@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <div class="toolbar no-select" routerLink="">
+      <span>CARS</span>
+    </div>
+    <span class="example-spacer"></span>
+    <div class="toolbar no-select">
+      <button class="toolbar button" mat-flat-button routerLink="">General</button>
+      <button class="toolbar button" mat-flat-button (click)="openDialogManufacturer()">Add Manufacturer</button>
+      <button class="toolbar button" mat-flat-button (click)="openDialogBrand()">Add Brand</button>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+

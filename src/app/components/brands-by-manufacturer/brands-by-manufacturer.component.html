@@ -1,0 +1,16 @@
+<div class="container">
+  <div style="margin-left: 37%; text-align: center"><h1>All brands of this manufacturer:</h1></div>
+  <mat-card class="theses-card" *ngFor="let brand of brands">
+    <mat-card-header>
+      <mat-card-title>Brand name: {{brand.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Brand Color: {{brand.color}}</p>
+      <p>Brand Cost: {{brand.cost | currency}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button class="button" mat-flat-button color="primary" (click)="deleteBrand(brand.id)">Delete Brand</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+

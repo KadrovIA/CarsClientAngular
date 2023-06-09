@@ -1,0 +1,15 @@
+<div class="container">
+  <mat-card class="theses-card" *ngFor="let manufacturer of manufacturers">
+    <mat-card-header>
+      <mat-card-title>Manufacturer's name: {{manufacturer.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Manufacturer country: {{manufacturer.country}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button class="button" mat-flat-button color="primary"
+              [routerLink]="['/Brand/', manufacturer.id]">Manufacturer brands</button>
+      <button class="button" mat-flat-button color="primary" (click)="deleteManufacturer(manufacturer.id)">Delete Manufacturer</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
